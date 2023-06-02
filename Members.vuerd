@@ -3,7 +3,7 @@
     "version": "2.2.11",
     "width": 2000,
     "height": 2000,
-    "scrollTop": -44.40000105857852,
+    "scrollTop": 0,
     "scrollLeft": 0,
     "zoomLevel": 1,
     "show": {
@@ -249,9 +249,9 @@
         ],
         "ui": {
           "active": false,
-          "left": 24,
-          "top": 328.4,
-          "zIndex": 23,
+          "left": 37.2,
+          "top": 353.6,
+          "zIndex": 28,
           "widthName": 120.47265625,
           "widthComment": 61.22998046875
         },
@@ -259,8 +259,8 @@
         "id": "e4e347c1-b0e5-49d7-a7ea-de3e737a102a"
       },
       {
-        "name": "EMAIL",
-        "comment": "이메일",
+        "name": "MEMBERS_LOGIN",
+        "comment": "회원_로그인",
         "columns": [
           {
             "name": "EMAIL",
@@ -310,12 +310,12 @@
           }
         ],
         "ui": {
-          "active": false,
-          "left": 429.2,
-          "top": 246.4,
-          "zIndex": 24,
-          "widthName": 60,
-          "widthComment": 60
+          "active": true,
+          "left": 504.8,
+          "top": 281.2,
+          "zIndex": 39,
+          "widthName": 115.41357421875,
+          "widthComment": 74.22998046875
         },
         "visible": true,
         "id": "4a596b72-d977-448f-8853-87c2be741635"
@@ -346,8 +346,8 @@
           "columnIds": [
             "c583e4c9-437c-4caa-83e4-55bd11508a76"
           ],
-          "x": 206.19482421875,
-          "y": 328.4,
+          "x": 219.39482421875,
+          "y": 353.6,
           "direction": "top"
         },
         "constraintName": "fk_members_to_members_hobby",
@@ -372,8 +372,8 @@
           "columnIds": [
             "c447d4b9-2d4c-4098-9481-f2f698196715"
           ],
-          "x": 429.2,
-          "y": 301.4,
+          "x": 504.8,
+          "y": 336.2,
           "direction": "left"
         },
         "constraintName": "fk_members_to_email",
