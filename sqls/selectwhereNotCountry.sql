@@ -1,4 +1,6 @@
+-- 출처:https://www.w3schools.com/sql/trysql.asp?filename=trysql_op_like 
+
 SELECT * FROM Customers
 WHERE Country NOT IN ('Germany', 'USA');
 
--- Number of Records: 67
+-- result : Number of Records: 67
