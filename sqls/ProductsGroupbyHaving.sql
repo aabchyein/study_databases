@@ -14,3 +14,8 @@ HAVING COUNT(T_PRO.CategoryID) >= 10;
 -- 13	3
 -- 10	4
 -- 12	8
+
+
+-- CategoryID를 grouping
+-- CagegoryID가 1,2,3... 각각 동일한 ID끼리 그룹이 형성된다.
+-- 그 그룹 중 CartegoryID가 10개 이상인 그룹을 찾는다.(HAVING절 사용)
