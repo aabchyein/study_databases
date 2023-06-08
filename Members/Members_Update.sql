@@ -4,8 +4,8 @@
 
 UPDATE members
 SET AGE = 29
-WHERE AGE IN (30, 32) ;
+WHERE AGE IN (30, 32);
 
-SELECT *
-FROM members 
+SELECT*
+FROM members
 ORDER BY AGE ;
