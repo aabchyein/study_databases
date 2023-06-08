@@ -1,4 +1,4 @@
--- Refer) 
+-- Refer) https://www.w3schools.com/sql/trysql.asp?filename=trysql_select_columns
 -- Table : Orders
 -- 조건 : 가장 많이 주문 받은 회사 직원명과 갯수
 
