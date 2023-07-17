@@ -1,0 +1,36 @@
+SELECT T_FAC.COMPANY, T_CAR_INFOR.CAR_NAME, COUNT(*) AS CNT
+FROM (factorys AS T_FAC
+	inner JOIN car_infors AS T_CAR_INFOR
+    ON T_FAC.COMPANY_ID = T_CAR_INFOR.COMPANY_ID)
+    inner JOIN `options` AS T_OPTS
+    ON T_CAR_INFOR.CAR_INFOR_ID = T_OPTS.CAR_INFOR_ID
+GROUP BY T_FAC.COMPANY, T_CAR_INFOR.CAR_NAME     -- 컴퓨터는 숫자를 좋아한다. 문자보단 숫자인 ID 즉 PRIMARY KEY를 이용하는 것이 좋다.->GROUP BY T_FAC.COMPANY_ID, T_CAR_INFOR.CAR_INFOR_ID
+;  -- 하나의 붙어있는 값으로 group by 되는 것. company만 묶어주면 car name은 허상으로 튀어나오기 때문에 car name도 같이 group화. 콤마(,)로 구분되어 있지만 두 개가 같이 붙어서 group by 된 것이다.
+
+INSERT INTO `OPTIONS`
+(OPTION_ID, CAR_INFOR_ID, OPTION_INFOR_ID)
+value
+('O006', 'CI001', 'OI005')
+;
+
+SELECT COUNT(*) FROM OPTIONS
+;
+
+INSERT INTO `OPTIONS`
+(OPTION_ID, CAR_INFOR_ID, OPTION_INFOR_ID)
+value
+('O007', 'CI002', 'OI004')
+;
+
+INSERT INTO `OPTIONS`
+(OPTION_ID, CAR_INFOR_ID, OPTION_INFOR_ID)
+value
+('O008', 'CI001', 'OI003')
+;
+
+SELECT T_FAC.COMPANY, T_CAR_INFOR.CAR_NAME
+FROM (factorys AS T_FAC
+	inner JOIN car_infors AS T_CAR_INFOR
+    ON T_FAC.COMPANY_ID = T_CAR_INFOR.COMPANY_ID)
+; 
+

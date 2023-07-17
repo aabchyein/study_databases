@@ -12,3 +12,4 @@ GROUP BY T_ORDERS.EmployeeID) AS T_INNER
 -- Result) Number of Records: 1
 -- MAX(CNT_ORDER)	LastName	FirstName
 -- 40	Peacock	Margaret
+/
